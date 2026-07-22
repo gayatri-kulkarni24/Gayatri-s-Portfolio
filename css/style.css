@@ -133,17 +133,118 @@ section{
     margin:auto;
 
 }
+/* =================================
 
-/* ============================
-        TEST
-============================ */
+NAVBAR
 
-h1{
+================================= */
 
-    text-align:center;
+.navbar{
 
-    margin-top:250px;
+    position:fixed;
 
-    font-size:4rem;
+    width:100%;
+
+    top:0;
+
+    left:0;
+
+    z-index:1000;
+
+    backdrop-filter:blur(15px);
+
+    background:rgba(5,8,22,.45);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.nav-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:80px;
+
+}
+
+.logo{
+
+font-size:1.8rem;
+
+font-weight:700;
+
+color:white;
+
+}
+
+.logo span{
+
+color:var(--primary);
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:40px;
+
+}
+
+.nav-links a{
+
+    color:var(--text);
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:var(--primary);
+
+}
+
+.resume-btn{
+
+background:linear-gradient(
+
+45deg,
+
+var(--primary),
+
+var(--purple)
+
+);
+
+padding:12px 28px;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.resume-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.menu-btn{
+
+    display:none;
+
+    font-size:2rem;
+
+    cursor:pointer;
 
 }

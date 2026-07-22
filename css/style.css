@@ -1,0 +1,149 @@
+/* ============================
+        GOOGLE FONT
+============================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ============================
+        RESET
+============================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ============================
+        ROOT VARIABLES
+============================ */
+
+:root{
+
+    --bg-color:#050816;
+
+    --secondary-bg:#0F172A;
+
+    --card-bg:#111827;
+
+    --primary:#3B82F6;
+
+    --purple:#7C3AED;
+
+    --text:#F8FAFC;
+
+    --grey:#94A3B8;
+
+    --border:rgba(255,255,255,.08);
+
+}
+
+/* ============================
+        HTML
+============================ */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* ============================
+        BODY
+============================ */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:var(--bg-color);
+
+    color:var(--text);
+
+    overflow-x:hidden;
+
+}
+
+/* ============================
+        LINKS
+============================ */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ============================
+        UL
+============================ */
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ============================
+        IMAGE
+============================ */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ============================
+        BUTTON
+============================ */
+
+button{
+
+    cursor:pointer;
+
+    border:none;
+
+}
+
+/* ============================
+        SECTION
+============================ */
+
+section{
+
+    padding:100px 10%;
+
+}
+
+/* ============================
+        CONTAINER
+============================ */
+
+.container{
+
+    width:100%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+/* ============================
+        TEST
+============================ */
+
+h1{
+
+    text-align:center;
+
+    margin-top:250px;
+
+    font-size:4rem;
+
+}

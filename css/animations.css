@@ -1,0 +1,13 @@
+/* Animation CSS */
+
+.fade-in{
+
+    opacity:0;
+
+}
+
+.scale{
+
+    transform:scale(.8);
+
+}

@@ -27,3 +27,15 @@ navbar.style.background="rgba(5,8,22,.6)";
 }
 
 });
+
+window.addEventListener("load",()=>{
+
+gsap.to("body",{
+
+opacity:1,
+
+duration:.5
+
+});
+
+});

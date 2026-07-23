@@ -11,3 +11,57 @@
     transform:scale(.8);
 
 }
+
+@keyframes floatBadge{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+width:500px;
+
+height:500px;
+
+background:radial-gradient(
+
+circle,
+
+rgba(124,58,237,.15),
+
+transparent 70%
+
+);
+
+bottom:-150px;
+
+left:-150px;
+
+filter:blur(60px);
+
+pointer-events:none;
+
+}
+

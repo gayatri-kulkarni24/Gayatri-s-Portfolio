@@ -41,27 +41,21 @@ content:"";
 
 position:absolute;
 
-width:500px;
+width:700px;
 
-height:500px;
+height:700px;
 
 background:radial-gradient(
-
 circle,
-
 rgba(124,58,237,.15),
-
 transparent 70%
-
 );
 
-bottom:-150px;
+left:-250px;
+bottom:-250px;
 
-left:-150px;
-
-filter:blur(60px);
+filter:blur(70px);
 
 pointer-events:none;
 
 }
-

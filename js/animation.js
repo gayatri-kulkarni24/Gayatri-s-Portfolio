@@ -70,3 +70,17 @@ duration:.8,
 ease:"back.out(1.7)"
 
 });
+
+gsap.to(".profile-circle",{
+
+    y:-15,
+
+    repeat:-1,
+
+    yoyo:true,
+
+    duration:3,
+
+    ease:"sine.inOut"
+
+});

@@ -20,7 +20,7 @@ renderer.setPixelRatio(window.devicePixelRatio);
 camera.position.z = 8;
 
 // Particles
-const particleCount = 2500;
+const particleCount = 3000;
 const positions = [];
 
 for (let i = 0; i < particleCount; i++) {
@@ -39,7 +39,7 @@ geometry.setAttribute(
 
 const material = new THREE.PointsMaterial({
     color: 0x60A5FA,
-    size: 0.040,
+    size: 0.05,
     transparent: true,
     opacity: 0.9,
     blending: THREE.AdditiveBlending,

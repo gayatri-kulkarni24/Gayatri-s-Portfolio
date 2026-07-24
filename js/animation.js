@@ -1,86 +1,102 @@
 const tl = gsap.timeline();
 
-tl.from(".logo",{
+    tl.from(".logo", {
+        x: -50,
+        opacity: 0,
+        duration: 1
+    })
 
-x:-50,
+    .from(".nav-links li", {
+        y: -40,
+        opacity: 0,
+        stagger: .12,
+        duration: .8
+    }, "-=0.5")
 
-opacity:0,
+    .from(".resume-btn", {
+        x: 40,
+        opacity: 0,
+        duration: .8
+    }, "-=0.5")
 
-duration:1
+    .from(".hero-animate", {
+        y: 60,
+        opacity: 1,
+        stagger: .18,
+        duration: 1
+    }, "-=0.3")
 
-})
+    .from(".hero-image", {
+        scale: .8,
+        opacity: 1,
+        duration: 1
+    }, "-=0.7");
 
-.from(".nav-links li",{
 
-y:-40,
+    gsap.from(".tech-badge", {
+        scale: .5,
+        opacity: 1,
+        stagger: .15,
+        delay: 1.8,
+        duration: .8,
+        ease: "back.out(1.7)"
+    });
+    
+    gsap.to(".profile-circle", {
+        y: -15,
+        repeat: -1,
+        yoyo: true,
+        duration: 3,
+        ease: "sine.inOut"
+    });
 
-opacity:0,
+gsap.from(".section-title",{
 
-stagger:.12,
-
-duration:.8
-
-},"-=0.5")
-
-.from(".resume-btn",{
-
-x:40,
-
-opacity:0,
-
-duration:.8
-
-},"-=0.5")
-
-.from(".hero-animate",{
+scrollTrigger:".about",
 
 y:60,
 
-opacity:1,
-
-stagger:.18,
+opacity:0,
 
 duration:1
 
-},"-=0.3")
+});
 
-.from(".hero-image",{
+gsap.from(".about-image",{
 
-scale:.8,
+scrollTrigger:".about",
 
-opacity:1,
+x:-100,
+
+opacity:0,
 
 duration:1
 
-},"-=0.7");
+});
 
+gsap.from(".about-content",{
 
-gsap.from(".tech-badge",{
+scrollTrigger:".about",
 
-scale:.5,
+x:100,
 
-opacity:1,
+opacity:0,
 
-stagger:.15,
-
-delay:1.8,
-
-duration:.8,
-
-ease:"back.out(1.7)"
+duration:1
 
 });
 
-gsap.to(".profile-circle",{
+gsap.from(".info-card",{
 
-    y:-15,
+scrollTrigger:".about",
 
-    repeat:-1,
+y:40,
 
-    yoyo:true,
+opacity:0,
 
-    duration:3,
+stagger:.2,
 
-    ease:"sine.inOut"
+duration:.7
 
 });
+gsap.registerPlugin(ScrollTrigger);

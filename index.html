@@ -7,198 +7,261 @@
 
     <!-- Mobile Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- SEO -->
-    <meta name="description"
-        content="Guddu's Developer Portfolio">
-
-    <meta name="keywords"
-        content="Portfolio, Web Developer, MERN, JavaScript">
-
-    <meta name="author"
-        content="Guddu">
-
+    <meta name="description" content="Guddu's Developer Portfolio">
+    <meta name="keywords" content="Portfolio, Web Developer, MERN, JavaScript">
+    <meta name="author" content="Guddu">
     <title>Guddu | Full Stack Developer</title>
-
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- Google Font -->
-
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-
     <!-- CSS -->
-
-    <link rel="stylesheet"
-        href="./css/style.css">
-
-    <link rel="stylesheet"
-        href="./css/responsive.css">
-
-    <link rel="stylesheet"
-        href="./css/animations.css">
-
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/animations.css">
 </head>
 
 <body>
 
-<header>
-  <nav class="navbar">
-    <div class="container nav-container">
+    <header>
+        <nav class="navbar">
+            <div class="container nav-container">
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <span>G</span>ayatri
+                </a>
+                <!-- Navigation -->
+                <ul class="nav-links">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
 
-      <!-- Logo -->
-      <a href="#" class="logo">
-        <span>G</span>uddu
-      </a>
+                <!-- Resume Button -->
+                <a href="#" class="resume-btn">Resume</a>
 
-      <!-- Navigation -->
-      <ul class="nav-links">
+                <!-- Mobile Menu -->
+                <div class="menu-btn">
+                    <i data-lucide="menu"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-            <li><a class="active" href="#home">Home</a></li>
-        
-            <li><a href="#about">About</a></li>
-        
-            <li><a href="#skills">Skills</a></li>
-        
-            <li><a href="#projects">Projects</a></li>
-        
-            <li><a href="#contact">Contact</a></li>
-
-      </ul>
-
-      <!-- Resume Button -->
-
-      <a href="#" class="resume-btn">
-
-        Resume
-
-      </a>
-
-      <!-- Mobile Menu -->
-
-      <div class="menu-btn">
-
-        <i data-lucide="menu"></i>
-
-      </div>
-
-    </div>
-  </nav>
-</header>
-
-<main>
-<section id="home" class="hero">
-<canvas id="bg-canvas"></canvas>
-<div class="container hero-container">
-
-<div class="hero-content">
-
-<p class="hero-subtitle hero-animate">
-👋 Hello, I'm
-</p>
-
-<h1 class="hero-title hero-animate">
-Guddu
-</h1>
-
-<h2 class="hero-role hero-animate">
-Full Stack Developer
-</h2>
-
-<p class="hero-description hero-animate">
-I build modern web applications using the MERN stack.
-</p>
-
-<div class="hero-buttons hero-animate">
-
-<a href="#contact" class="primary-btn">
-Hire Me
-</a>
-
-<a href="#" class="secondary-btn">
-Resume
-</a>
-
-</div>
-
-        <div class="social-links hero-animate">
-        
-                <a href="#">GitHub</a>
-
-                <a href="#">LinkedIn</a>
-
-                <a href="#">LeetCode</a>
-        
-        </div>
-
-<div class="stats hero-animate">
-
-<div class="stat-card">
-                        <h3>9+</h3>
-                        <p>CGPA</p>
+    <main>
+        <section id="home" class="hero">
+            <canvas id="bg-canvas"></canvas>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <p class="hero-subtitle hero-animate">
+                        👋 Hello, I'm
+                    </p>
+                    <h1 class="hero-title hero-animate">
+                        Guddu
+                    </h1>
+                    <h2 class="hero-role hero-animate">
+                        Full Stack Developer
+                    </h2>
+                    <p class="hero-description hero-animate">
+                        I build modern web applications using the MERN stack.
+                    </p>
+                    <div class="hero-buttons hero-animate">
+                        <a href="#contact" class="primary-btn">
+                            Hire Me
+                        </a>
+                        <a href="#" class="secondary-btn">
+                            Resume
+                        </a>
                     </div>
-                    <div class="stat-card">
-                        <h3>4+</h3>
-                        <p>Projects</p>
+                    <div class="social-links hero-animate">
+                        <a href="#">GitHub</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">LeetCode</a>
                     </div>
-                    <div class="stat-card">
-                        <h3>MERN</h3>
-                        <p>Stack</p>
+                    <div class="stats hero-animate">
+                        <div class="stat-card">
+                            <h3>9+</h3>
+                            <p>CGPA</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>4+</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>MERN</h3>
+                            <p>Stack</p>
+                        </div>
                     </div>
+                </div>
+                <div class="hero-image hero-animate">
+                    <div class="profile-circle">
+                        <img src="assets/images/profile.png" alt="Guddu">
+                    </div>
+                    <div class="tech-badge react">⚛ React</div>
+                    <div class="tech-badge node">🟢 Node.js</div>
+                    <div class="tech-badge mongo">🍃 MongoDB</div>
+                    <div class="tech-badge js">🟨 JavaScript</div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
+        </section>
 
-</div>
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                </div>
+                <div class="about-container">
+                    <div class="about-content">
+                        <h3>Full Stack Developer | MCA Student</h3>
+                        <p>
+                            I am <strong>Gayatri Sunil Kulkarni</strong>, a passionate Full Stack Developer and an MCA
+                            student with a strong academic background and a deep interest in software development. I
+                            enjoy building modern, responsive, and scalable web applications while continuously
+                            improving my problem-solving abilities through Data Structures and Algorithms.
 
-</div>
-<div class="hero-image hero-animate">
+                            Throughout my academic journey, I have maintained excellent consistency in both academics
+                            and technical skill development. Alongside my studies, I have focused on MERN Stack
+                            development, DSA, communication skills, and industry-relevant technologies to prepare myself
+                            for a successful career in software engineering.
 
-    <div class="profile-circle">
+                            My goal is to become a skilled Software Engineer by creating impactful applications,
+                            continuously learning new technologies, and solving real-world problems through clean and
+                            efficient code.
+                        </p>
+                        <div class="about-info">
 
-        <img src="assets/images/profile.png" alt="Guddu">
+                            <div class="info-card">
 
-    </div>
+                                <h4>🎓 Current Education</h4>
 
-    <div class="tech-badge react">⚛ React</div>
+                                <p>
+                                    Master of Computer Applications (MCA)<br>
+                                    Savitribai Phule Pune University<br>
+                                    2026 – 2028
+                                </p>
 
-    <div class="tech-badge node">🟢 Node.js</div>
+                            </div>
 
-    <div class="tech-badge mongo">🍃 MongoDB</div>
+                            <div class="info-card">
 
-    <div class="tech-badge js">🟨 JavaScript</div>
+                                <h4>🏫 Graduation</h4>
 
-</div>
+                                <p>
+                                    Bachelor of Computer Science (BCS)<br>
+                                    R.B.N.B. College, Shrirampur<br>
+                                    2023 – 2026
+                                </p>
 
-</div>
+                            </div>
 
-<div class="scroll-indicator">
+                            <div class="info-card">
 
-<span></span>
+                                <h4>📊 Academic Performance</h4>
 
-</div>
+                                <p>
+                                    BCS CGPA: <strong>9.09</strong><br>
+                                    Class 12: 73%<br>
+                                    Class 10: 91.66%
+                                </p>
 
-</section>
+                            </div>
 
-<section id="about" class="demo-section">
-    <h1>About</h1>
-</section>
+                            <div class="info-card">
 
-<section id="skills" class="demo-section">
-    <h1>Skills</h1>
-</section>
+                                <h4>💻 Core Skills</h4>
 
-<section id="projects" class="demo-section">
-    <h1>Projects</h1>
-</section>
+                                <p>
+                                    MERN Stack<br>
+                                    Data Structures & Algorithms<br>
+                                    Problem Solving<br>
+                                    Communication Skills
+                                </p>
 
-<section id="contact" class="demo-section">
-    <h1>Contact</h1>
-</section>
+                            </div>
 
-</main>
+                        </div>
+                        <div class="cgpa-card">
+                            <h3>Academic Highlights</h3>
+                            <ul>
+                                <li>Semester I – <strong>9.27</strong></li>
+                                <li>Semester II – <strong>9.27</strong></li>
+                                <li>Semester III – <strong>8.55</strong></li>
+                                <li>Semester IV – <strong>9.27</strong></li>
+                                <li>Semester V – <strong>8.91</strong></li>
+                                <li>Semester VI – <strong>9.27</strong></li>
+                            </ul>
+                        </div>
+                        <p class="career-goal">
+                            🚀 Preparing for Software Engineering roles by strengthening my skills in Full Stack
+                            Development, Data Structures & Algorithms, System Design fundamentals, and professional
+                            communication while building production-ready projects.
+                        </p>
+
+                        <div class="about-social">
+
+                            <h4>Connect With Me</h4>
+
+                            <div class="social-icons">
+
+                                <a href="https://github.com/gayatri-kulkarni24" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/gayatri-kulkarni24" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+
+                                <a href="https://leetcode.com/u/gayatri_2411" target="_blank">
+                                    <i class="fas fa-code"></i>
+                                    LeetCode
+                                </a>
+
+                                <a href="mailto:gaytrikulkarni616@gmail.com">
+                                    <i class="fas fa-envelope"></i>
+                                    gaytrikulkarni616@gmail.com
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <div class="about-buttons">
+                            <a href="#" class="primary-btn">
+                                Download Resume
+                            </a>
+                            <a href="#contact" class="secondary-btn">
+                                Contact Me
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="demo-section">
+            <h1>Skills</h1>
+        </section>
+
+        <section id="projects" class="demo-section">
+            <h1>Projects</h1>
+        </section>
+
+        <section id="contact" class="demo-section">
+            <h1>Contact</h1>
+        </section>
+
+    </main>
 
 
     <!-- GSAP -->
@@ -208,7 +271,7 @@ Resume
     <!-- Three JS -->
 
     <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
-        <!-- Lucide -->
+    <!-- Lucide -->
 
     <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -216,8 +279,8 @@ Resume
 
         lucide.createIcons();
 
-    </script>    
-    
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
     <!-- JS -->
 
     <script src="./js/main.js"></script>

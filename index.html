@@ -28,9 +28,36 @@
 </head>
 
 <body>
-  <!-- Custom Cursor -->
-<div class="cursor-dot"></div>
-<div class="cursor-outline"></div>
+    <!-- ==========================
+     LOADING SCREEN
+========================== -->
+
+<div class="loader" id="loader">
+
+    <div class="loader-content">
+
+        <div class="loader-logo">
+            G<span>.</span>
+        </div>
+
+        <div class="loader-line">
+            <div class="loader-progress"></div>
+        </div>
+
+        <div class="loader-info">
+
+            <span>LOADING</span>
+
+            <span id="loader-percent">0%</span>
+
+        </div>
+
+    </div>
+
+</div>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
   <header>
     <nav class="navbar">
       <div class="container nav-container">
@@ -38,7 +65,7 @@
         <a href="#" class="logo"> <span>G</span>ayatri </a>
         <!-- Navigation -->
         <ul class="nav-links">
-          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -1277,6 +1304,7 @@
   <!-- JS -->
   <script src="./js/main.js"></script>
   <script src="./js/hero.js"></script>
+  <script src="./js/loader.js"></script>
   <script src="./js/animation.js"></script>
   <script src="./js/threeScene.js"></script>
   <script src="./js/stats.js"></script>

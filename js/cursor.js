@@ -15,7 +15,6 @@ let outlineY = 0;
 // Mouse position
 
 document.addEventListener("mousemove", (e) => {
-
     mouseX = e.clientX;
     mouseY = e.clientY;
 
@@ -33,32 +32,22 @@ outlineX += (mouseX - outlineX) * 0.10;
 outlineY += (mouseY - outlineY) * 0.10;
     cursorOutline.style.left = `${outlineX}px`;
     cursorOutline.style.top = `${outlineY}px`;
-
     requestAnimationFrame(animateCursor);
 
 }
-
 animateCursor();
 
+    // Interactive elements
 
-// Interactive elements
-
-const interactiveElements = document.querySelectorAll(
-    "a, button, input, textarea, .skill-card, .project-card, .contact-box"
-);
-
-interactiveElements.forEach((element) => {
-
-    element.addEventListener("mouseenter", () => {
-
-        cursorOutline.classList.add("cursor-hover");
-
-    });
-
-    element.addEventListener("mouseleave", () => {
-
-        cursorOutline.classList.remove("cursor-hover");
+    const interactiveElements = document.querySelectorAll(
+        "a, button, input, textarea, .skill-card, .project-card, .contact-box"
+    );
+    interactiveElements.forEach((element) => {
+        element.addEventListener("mouseenter", () => {
+            cursorOutline.classList.add("cursor-hover");
+        });
+        element.addEventListener("mouseleave", () => {
+            cursorOutline.classList.remove("cursor-hover");
+        });
 
     });
-
-});

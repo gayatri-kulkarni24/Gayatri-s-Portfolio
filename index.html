@@ -28,36 +28,28 @@
 </head>
 
 <body>
-    <!-- ==========================
-     LOADING SCREEN
-========================== -->
 
-<div class="loader" id="loader">
-
+  <div class="loader" id="loader">
     <div class="loader-content">
+      <div class="loader-logo">
+        G<span>.</span>
+      </div>
 
-        <div class="loader-logo">
-            G<span>.</span>
-        </div>
+      <div class="loader-line">
+        <div class="loader-progress"></div>
+      </div>
 
-        <div class="loader-line">
-            <div class="loader-progress"></div>
-        </div>
-
-        <div class="loader-info">
-
-            <span>LOADING</span>
-
-            <span id="loader-percent">0%</span>
-
-        </div>
-
+      <div class="loader-info">
+        <span>LOADING</span>
+        <span id="loader-percent">0%</span>
+      </div>
     </div>
-
-</div>
+  </div>
+  
     <!-- Custom Cursor -->
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
+
   <header>
     <nav class="navbar">
       <div class="container nav-container">
@@ -1164,6 +1156,7 @@
 
     <section class="contact" id="contact">
       <div class="container">
+
         <div class="section-title">
           <h2>Get In Touch</h2>
 
@@ -1238,46 +1231,47 @@
         </div>
 
         <!-- FORM -->
-
         <div class="contact-form-wrapper">
-          <div class="form-glow glow1"></div>
 
+          <div class="form-glow glow1"></div>
           <div class="form-glow glow2"></div>
 
           <form class="contact-form">
+
             <h2>Send Me A Message</h2>
+            <div class="input-row"></div>
 
             <div class="input-box">
-              <input type="text" required />
-
-              <label>Name</label>
+              <input type="text" id="name" required />
+              <label for="name">Your Name</label>
+              <i class="fas fa-user"></i>
             </div>
 
             <div class="input-box">
-              <input type="email" required />
-
-              <label>Email</label>
+              <input type="email" id="email" required />
+              <label for="email">Email Address</label>
+              <i class="fas fa-envelope"></i>
             </div>
+
 
             <div class="input-box">
-              <input type="text" required />
-
-              <label>Subject</label>
+              <textarea id="message" maxlength="500" required></textarea>
+              <label for="message">Tell me about it</label>
+              <i class="fas fa-message"></i>
+              <span class="char-count">
+                <span id="charCount">0</span>/500
+              </span>
             </div>
 
-            <div class="input-box">
-              <textarea required></textarea>
-
-              <label>Message</label>
-            </div>
-
-            <button>
-              <i class="fas fa-paper-plane"></i>
-
-              Send Message
+            <button type="submit">
+              <span>Send Message</span>
+              <i class="fas fa-arrow-up-right-from-square"></i>
             </button>
+
           </form>
+
         </div>
+
       </div>
     </section>
 

@@ -20,10 +20,15 @@
 
 :root {
     --bg-color: #050816;
+    --bg-color:#070A12;
     --secondary-bg: #0F172A;
-    --card-bg: #111827;
-    --primary: #3B82F6;
+    --secondary-bg: #1ae12e;
+    --card-bg: #1f6578;
+    --primary:#24d2e5;
     --purple: #7C3AED;
+     /* --purple:#0b63bb; */
+     --grd1:#8171ba;
+     --grd2:#6E85B2;
     --text: #F8FAFC;
     --grey: #94A3B8;
     --border: rgba(255, 255, 255, .08);
@@ -169,6 +174,12 @@ NAVBAR
     margin-top: 40px;
 }
 
+
+/*========================
+Buttons
+========================*/
+
+
 .primary-btn {
     display: inline-flex;
     align-items: center;
@@ -197,27 +208,41 @@ NAVBAR
     }
 }
 
-.primary-btn:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(59, 130, 246, .35);
-}
-
 .secondary-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 15px 36px;
     border-radius: 50px;
-    border: 1px solid var(--primary);
     transition: .35s;
     box-shadow: 0 0 0 rgba(59, 130, 246, .5);
     animation: buttonGlow 2s infinite;
+    border: 1px solid rgba(255, 255, 255, 0.723);
+    color: white;
 }
 
-.secondary-btn:hover {
-    background: rgba(59, 130, 246, .15);
-    transform: translateY(-6px);
+
+.primary-btn,
+.secondary-btn {
+    padding: 12px 28px;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: .35s;
 }
+
+.primary-btn {
+    background: linear-gradient(135deg,
+            var(--grd1),
+            var(--grd2));
+    color: white;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(59, 130, 246, .35);
+}
+
 
 .social-links {
     display: flex;
@@ -500,7 +525,7 @@ HOME STATS
 ==================================*/
 
 .home-stats {
-    padding: 10px 0 120px;
+    padding: 30px 20px 120px;
 }
 
 .stats-grid {
@@ -511,7 +536,7 @@ HOME STATS
 
 .stat-card {
     position: relative;
-    background: rgba(255, 255, 255, .05);
+    background: rgba(7, 1, 1, 0.863);
     border: 1px solid rgba(255, 255, 255, .08);
     border-radius: 22px;
     padding: 35px 25px;
@@ -1008,6 +1033,18 @@ PROJECTS SECTION
     background: var(--bg-color);
 }
 
+.project-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: auto;
+}
+
+.project-buttons a {
+    text-decoration: none;
+    text-align: center;
+}
+
+
 /*========================
 Featured Projects
 ========================*/
@@ -1069,9 +1106,6 @@ Project Image
     transition: .5s;
 }
 
-/* .featured-large .project-image img{
-    height:350px;
-} */
 
 .featured-card:hover img,
 .project-card:hover img {
@@ -1147,46 +1181,6 @@ Tech Stack
 .tech-stack span:hover {
     background: var(--primary);
     color: white;
-}
-
-/*========================
-Buttons
-========================*/
-
-.project-buttons {
-    display: flex;
-    gap: 15px;
-    margin-top: auto;
-}
-
-.project-buttons a {
-    text-decoration: none;
-    text-align: center;
-}
-
-.primary-btn,
-.secondary-btn {
-    padding: 12px 28px;
-    border-radius: 40px;
-    font-weight: 600;
-    transition: .35s;
-}
-
-.primary-btn {
-    background: linear-gradient(135deg,
-            var(--primary),
-            var(--purple));
-    color: white;
-}
-
-.secondary-btn {
-    border: 1px solid rgba(255, 255, 255, .15);
-    color: white;
-}
-
-.primary-btn:hover,
-.secondary-btn:hover {
-    transform: translateY(-4px);
 }
 
 /*========================
@@ -1690,12 +1684,9 @@ Developer Dashboard
     position: fixed;
     top: 0;
     left: 0;
-
     pointer-events: none;
     z-index: 99999;
-
     border-radius: 50%;
-
     transform: translate(-50%, -50%);
 }
 
@@ -1704,9 +1695,7 @@ Developer Dashboard
 .cursor-dot {
     width: 5px;
     height: 5px;
-
     background: #ffffff;
-
     box-shadow:
         0 0 8px var(--primary),
         0 0 16px var(--primary);
@@ -1718,11 +1707,8 @@ Developer Dashboard
 .cursor-outline {
     width: 24px;
     height: 24px;
-
     border: 1px solid rgba(255,255,255,.4);
-
     background: transparent;
-
     transition:
         width .25s ease,
         height .25s ease,
@@ -1734,11 +1720,8 @@ Developer Dashboard
 .cursor-outline.cursor-hover {
     width: 34px;
     height: 34px;
-
     border-color: var(--primary);
-
     background: rgba(59,130,246,.04);
-
     box-shadow:
         0 0 12px rgba(59,130,246,.2);
 }
@@ -1746,144 +1729,363 @@ Developer Dashboard
 /* Hide on touch devices */
 
 @media (hover: none), (pointer: coarse) {
-
     .cursor-dot,
     .cursor-outline {
         display: none;
     }
-
 }
-
 
 /* ==========================
    PREMIUM LOADING SCREEN
 ========================== */
 
 .loader {
-
     position: fixed;
-
     inset: 0;
-
     width: 100%;
     height: 100vh;
-
     background: #080b14;
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     z-index: 999999;
-
     overflow: hidden;
 }
-
-
 /* Loader content */
-
 .loader-content {
-
     width: min(420px, 80%);
-
     text-align: center;
 }
-
-
 /* Logo */
-
 .loader-logo {
-
     font-size: 5rem;
-
     font-weight: 800;
-
     color: white;
-
     letter-spacing: -4px;
-
     margin-bottom: 40px;
-
     opacity: 0;
 }
-
 .loader-logo span {
-
     color: var(--primary);
-
 }
-
-
 /* Progress line */
-
 .loader-line {
-
     width: 100%;
-
     height: 2px;
-
     background: rgba(255,255,255,.1);
-
     overflow: hidden;
-
     border-radius: 10px;
 }
-
-
 /* Progress */
-
 .loader-progress {
-
     width: 0%;
-
     height: 100%;
-
     background: linear-gradient(
         90deg,
         var(--primary),
         var(--purple)
     );
-
     box-shadow:
         0 0 15px var(--primary);
-
 }
 
 
 /* Bottom information */
-
 .loader-info {
-
     display: flex;
-
     justify-content: space-between;
-
     margin-top: 12px;
-
     font-size: .75rem;
-
     letter-spacing: 2px;
-
     color: rgba(255,255,255,.5);
-
 }
-
 
 /* Percentage */
-
 #loader-percent {
-
     color: white;
+}
 
+/* Prevent scrolling while loading */
+body.loading {
+    overflow: hidden;
+}
+
+/* =========================================
+   PREMIUM CONTACT FORM
+========================================= */
+.contact-form-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: auto;
+}
+
+/* =========================================
+   FORM GLOWS
+========================================= */
+.form-glow {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    filter: blur(100px);
+    pointer-events: none;
+    opacity: .15;
+}
+
+.glow1 {
+    background: #3b82f6;
+    top: -150px;
+    right: -100px;
+}
+
+.glow2 {
+    background: #8b5cf6;
+    bottom: -150px;
+    left: -100px;
+}
+
+/* =========================================
+   FORM
+========================================= */
+.contact-form {
+    position: relative;
+    z-index: 2;
+    padding: 45px;
+    border-radius: 28px;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.075),
+            rgba(255,255,255,.025)
+        );
+    border: 1px solid rgba(255,255,255,.1);
+    backdrop-filter: blur(25px);
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.25);
 }
 
 
-/* Prevent scrolling while loading */
+/* =========================================
+   HEADER
+========================================= */
 
-body.loading {
+.form-header {
+    margin-bottom: 38px;
+}
 
-    overflow: hidden;
+.form-header span {
+    display: inline-block;
+    color: var(--primary);
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
 
+.form-header h2 {
+    margin: 0 0 10px;
+    font-size: 2rem;
+    color: white;
+}
+
+.form-header p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: .9rem;
+    line-height: 1.7;
+}
+
+/* =========================================
+   INPUT ROW
+========================================= */
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+/* =========================================
+   INPUT BOX
+========================================= */
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   INPUTS
+========================================= */
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 15px;
+    outline: none;
+    background: rgba(255,255,255,.035);
+    color: white;
+    font-family: inherit;
+    font-size: .9rem;
+    transition:
+        .3s ease;
+}
+
+/* Input */
+.input-box input {
+    height: 60px;
+    padding: 20px 45px 7px 17px;
+}
+
+/* Textarea */
+.input-box textarea {
+    height: 160px;
+    padding: 25px 45px 20px 17px;
+    resize: vertical;
+}
+
+/* =========================================
+   LABEL
+========================================= */
+.input-box label {
+    position: absolute;
+    left: 17px;
+    top: 20px;
+    color: #64748b;
+    font-size: .85rem;
+    pointer-events: none;
+    transition: .25s ease;
+}
+
+/* Textarea label */
+.input-box textarea + label {
+    top: 24px;
+}
+
+/* =========================================
+   FLOATING LABEL
+========================================= */
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: 7px;
+    font-size: .65rem;
+    color: var(--primary);
+}
+
+.input-box textarea:focus + label,
+.input-box textarea:valid + label {
+    top: 7px;
+    font-size: .65rem;
+    color: var(--primary);
+}
+
+/* =========================================
+   ICONS
+========================================= */
+.input-box > i {
+    position: absolute;
+    right: 17px;
+    top: 22px;
+    color: #475569;
+    font-size: .85rem;
+    pointer-events: none;
+    transition: .3s ease;
+}
+.input-box textarea ~ i {
+    top: 27px;
+}
+
+.input-box input:focus ~ i,
+.input-box textarea:focus ~ i {
+    color: var(--primary);
+    transform: scale(1.1);
+}
+
+/* =========================================
+   FOCUS EFFECT
+========================================= */
+.input-box input:focus,
+.input-box textarea:focus {
+    border-color: var(--primary);
+    background: rgba(59,130,246,.04);
+    box-shadow:
+        0 0 0 3px rgba(59,130,246,.06),
+        0 10px 30px rgba(0,0,0,.1);
+}
+/* =========================================
+   CHARACTER COUNT
+========================================= */
+.char-count {
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    color: #475569;
+    font-size: .7rem;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+.contact-form button {
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    cursor: pointer;
+    color: white;
+    font-family: inherit;
+    font-size: .9rem;
+    font-weight: 700;
+    background:
+        linear-gradient(
+            135deg,
+            var(--primary),
+            var(--purple)
+        );
+    box-shadow:
+        0 12px 30px rgba(59,130,246,.2);
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.contact-form button:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 18px 40px rgba(59,130,246,.3);
+}
+.contact-form button:active {
+    transform: translateY(0);
+}
+.contact-form button i {
+    transition: .3s ease;
+}
+.contact-form button:hover i {
+    transform:
+        translate(3px,-3px);
+}
+/* =========================================
+   MOBILE
+========================================= */
+@media(max-width:600px) {
+    .contact-form {
+        padding: 30px 20px;
+        border-radius: 22px;
+    }
+    .input-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .form-header h2 {
+        font-size: 1.6rem;
+    }
 }

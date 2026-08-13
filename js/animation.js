@@ -87,3 +87,8 @@ gsap.from(".info-card", {
     stagger: 0.2,
     duration: 0.7,
 });
+
+
+
+
+

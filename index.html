@@ -1,0 +1,1309 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Character Encoding -->
+  <meta charset="UTF-8" />
+
+  <!-- Mobile Responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- SEO -->
+  <meta name="description" content="Guddu's Developer Portfolio" />
+  <meta name="keywords" content="Portfolio, Web Developer, MERN, JavaScript" />
+  <meta name="author" content="Guddu" />
+  <title>Gayatri | Full Stack Developer</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+  <link rel="stylesheet" href="./css/animations.css" />
+</head>
+
+<body>
+  <div class="scroll-progress"></div>
+
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">
+        G<span>.</span>
+      </div>
+
+      <div class="loader-line">
+        <div class="loader-progress"></div>
+      </div>
+
+      <div class="loader-info">
+        <span>LOADING</span>
+        <span id="loader-percent">0%</span>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+  <header>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <!-- Logo -->
+        <a href="#" class="logo"> <span>G</span>ayatri </a>
+        <!-- Navigation -->
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Resume Button -->
+        <a href="#" class="resume-btn">Resume</a>
+
+        <!-- Mobile Menu -->
+        <div class="menu-btn">
+          <i data-lucide="menu"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <canvas id="bg-canvas"></canvas>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <p class="hero-subtitle hero-animate">👋 Hello, I'm</p>
+          <h1 class="hero-title hero-animate">Guddu</h1>
+          <h2 class="hero-role hero-animate">Full Stack Developer</h2>
+          <p class="hero-description hero-animate">
+            I build modern web applications using the MERN stack.
+          </p>
+          <div class="hero-buttons hero-animate">
+            <a href="#contact" class="primary-btn"> Hire Me </a>
+            <a href="#" class="secondary-btn"> Resume </a>
+          </div>
+          <div class="social-links hero-animate">
+            <a href="https://github.com/gayatri-kulkarni24" target="_blank">
+              <i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/gayatri-kulkarni24" target="_blank">
+              <i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://leetcode.com/u/gayatri_2411" target="_blank">
+              <i class="fas fa-code"></i> LeetCode</a>
+          </div>
+          <div class="stats hero-animate">
+            <!-- <div class="stat-card">
+              <h3 style="color: #06f60a;">9+</h3>
+              <p>CGPA</p>
+            </div> -->
+            <!-- <div class="stat-card">
+              <h3 style="color: #f1dd07;">7+</h3>
+              <p>Projects</p>
+            </div> -->
+            <!-- <div class="stat-card">
+              <h3><span style="color: green;">M</span>
+                <span style="color: #c12323e6;">E</span>
+                <span style="color: #0caadb;">R</span>
+                <span style="color: #82ec0ac9;">N</span>
+              </h3>
+              <p>Stack</p>
+            </div> -->
+          </div>
+        </div>
+        <div class="hero-image hero-animate">
+          <div class="profile-circle">
+            <img src="assets/images/profile.png" alt="Guddu" />
+          </div>
+          <div class="tech-badge react">⚛ React</div>
+          <div class="tech-badge node">🟢 Node.js</div>
+          <div class="tech-badge mongo">🍃 MongoDB</div>
+          <div class="tech-badge js">🟨 JavaScript</div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span></span>
+      </div>
+    </section>
+
+    <section class="home-stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <i class="fas fa-graduation-cap"></i>
+            <h2 class="counter" data-target="9">0</h2>
+            <span>+</span>
+            <p>CGPA</p>
+          </div>
+
+          <div class="stat-card">
+            <i class="fas fa-code"></i>
+            <h2 class="counter" data-target="5">0</h2>
+            <span>+</span>
+            <p>Projects</p>
+          </div>
+
+          <div class="stat-card">
+            <i class="fas fa-laptop-code"></i>
+            <h2 class="counter" data-target="20">0</h2>
+            <span>+</span>
+            <p>Technologies</p>
+          </div>
+
+          <div class="stat-card">
+            <i class="fas fa-briefcase"></i>
+            <h2 class="counter" data-target="1">0</h2>
+            <p>Internship</p>
+          </div>
+
+          <div class="stat-card">
+            <i class="fas fa-award"></i>
+            <h2 class="counter" data-target="6">0</h2>
+            <span>+</span>
+            <p>Certificates</p>
+          </div>
+
+          <div class="stat-card">
+            <i class="fas fa-medal"></i>
+            <h2 class="counter" data-target="6">0</h2>
+            <p>LeetCode Badges</p>
+          </div>
+
+          <div class="stat-card">
+            <i class="fas fa-fire"></i>
+            <h2 class="counter" data-target="100">0</h2>
+            <span>+</span>
+            <p>Days Streak</p>
+          </div>
+
+          <div class="stat-card">
+            <i class="fas fa-code"></i>
+            <h2>200+</h2>
+            <p>DSA Questions Solved</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Me</h2>
+        </div>
+        <div class="about-container">
+          <div class="about-content">
+            <h3>Full Stack Developer | MCA Student</h3>
+            <p>
+              I am <strong>Gayatri Sunil Kulkarni</strong>, a passionate Full
+              Stack Developer and an MCA student with a strong academic
+              background and a deep interest in software development. I enjoy
+              building modern, responsive, and scalable web applications while
+              continuously improving my problem-solving abilities through Data
+              Structures and Algorithms. Throughout my academic journey, I
+              have maintained excellent consistency in both academics and
+              technical skill development. Alongside my studies, I have
+              focused on MERN Stack development, DSA, communication skills,
+              and industry-relevant technologies to prepare myself for a
+              successful career in software engineering. My goal is to become
+              a skilled Software Engineer by creating impactful applications,
+              continuously learning new technologies, and solving real-world
+              problems through clean and efficient code.
+            </p>
+            <div class="about-info">
+              <div class="info-card">
+                <h4>🎓 Current Education</h4>
+
+                <p>
+                  Master of Computer Applications (MCA)<br />
+                  Savitribai Phule Pune University<br />
+                  2026 – 2028
+                </p>
+              </div>
+
+              <div class="info-card">
+                <h4>🏫 Graduation</h4>
+
+                <p>
+                  Bachelor of Computer Science (BCS)<br />
+                  R.B.N.B. College, Shrirampur<br />
+                  2023 – 2026
+                </p>
+              </div>
+
+              <div class="info-card">
+                <h4>📊 Academic Performance</h4>
+
+                <p>
+                  BCS CGPA: <strong>9.09</strong><br />
+                  Class 12: 73%<br />
+                  Class 10: 91.66%
+                </p>
+              </div>
+
+              <div class="info-card">
+                <h4>💻 Core Skills</h4>
+
+                <p>
+                  MERN Stack<br />
+                  Data Structures & Algorithms<br />
+                  Problem Solving<br />
+                  Communication Skills
+                </p>
+              </div>
+            </div>
+            <div class="cgpa-card">
+              <h3>Academic Highlights</h3>
+              <ul>
+                <li>Semester I – <strong>9.27</strong></li>
+                <li>Semester II – <strong>9.27</strong></li>
+                <li>Semester III – <strong>8.55</strong></li>
+                <li>Semester IV – <strong>9.27</strong></li>
+                <li>Semester V – <strong>8.91</strong></li>
+                <li>Semester VI – <strong>9.27</strong></li>
+              </ul>
+            </div>
+            <p class="career-goal">
+              🚀 Preparing for Software Engineering roles by strengthening my
+              skills in Full Stack Development, Data Structures & Algorithms,
+              System Design fundamentals, and professional communication while
+              building production-ready projects.
+            </p>
+
+            <div class="about-social">
+              <h4>Connect With Me</h4>
+
+              <div class="social-icons">
+                <a href="https://github.com/gayatri-kulkarni24" target="_blank">
+                  <i class="fab fa-github"></i>
+                  GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/gayatri-kulkarni24" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                  LinkedIn
+                </a>
+
+                <a href="https://leetcode.com/u/gayatri_2411" target="_blank">
+                  <i class="fas fa-code"></i>
+                  LeetCode
+                </a>
+
+                <a href="mailto:gaytrikulkarni616@gmail.com">
+                  <i class="fas fa-envelope"></i>
+                  gaytrikulkarni616@gmail.com
+                </a>
+              </div>
+            </div>
+
+            <div class="about-buttons">
+              <a href="#" class="primary-btn"> Download Resume </a>
+              <a href="#contact" class="secondary-btn"> Contact Me </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-title">
+          <h2>My Skills</h2>
+          <p>Technologies I Work With</p>
+        </div>
+
+        <!-- Frontend -->
+
+        <div class="skill-category">
+          <h3>Frontend Development</h3>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="devicon-html5-plain colored"></i>
+              <span>HTML5</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-css3-plain colored"></i>
+              <span>CSS3</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-javascript-plain colored"></i>
+              <span>JavaScript</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-react-original colored"></i>
+              <span>React</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-tailwindcss-original colored"></i>
+              <span>Tailwind CSS</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-bootstrap-plain colored"></i>
+              <span>Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+
+        <div class="skill-category">
+          <h3>Backend Development</h3>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="devicon-nodejs-plain colored"></i>
+              <span>Node.js</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-express-original"></i>
+              <span>Express.js</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="fas fa-plug"></i>
+              <span>REST APIs</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-php-plain colored"></i>
+              <span>PHP</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database -->
+
+        <div class="skill-category">
+          <h3>Databases</h3>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="devicon-mongodb-plain colored"></i>
+              <span>MongoDB</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-mysql-original colored"></i>
+              <span>MySQL</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-postgresql-plain colored"></i>
+              <span>PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Programming -->
+
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="devicon-java-plain colored"></i>
+              <span>Java</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-c-plain colored"></i>
+              <span>C</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-cplusplus-plain colored"></i>
+              <span>C++</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CS Fundamentals -->
+
+        <div class="skill-category">
+          <h3>Computer Science Fundamentals</h3>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="fas fa-code"></i>
+              <span>Data Structures</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="fas fa-cube"></i>
+              <span>OOP</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="fas fa-database"></i>
+              <span>DBMS</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="fas fa-microchip"></i>
+              <span>Operating Systems</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="fas fa-network-wired"></i>
+              <span>Computer Networks</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="fas fa-project-diagram"></i>
+              <span>UML</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+
+        <div class="skill-category">
+          <h3>Tools</h3>
+
+          <div class="skills-grid">
+            <div class="skill-card">
+              <i class="devicon-git-plain colored"></i>
+              <span>Git</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-github-original"></i>
+              <span>GitHub</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-vscode-plain colored"></i>
+              <span>VS Code</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-postman-plain colored"></i>
+              <span>Postman</span>
+            </div>
+
+            <div class="skill-card">
+              <i class="devicon-npm-original-wordmark colored"></i>
+              <span>NPM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-title">
+          <h2>Featured Work</h2>
+          <p>
+            A collection of projects showcasing my expertise in Full Stack
+            Development, UI Design, APIs, and Problem Solving.
+          </p>
+        </div>
+
+        <div class="featured-projects">
+          <!-- TradeNest -->
+
+          <div class="featured-card">
+            <div class="project-image">
+              <img src="./assets/projects/tradenest.png" />
+
+              <span class="project-status completed"> Featured </span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="featured-heading">TradeNest</h3>
+
+              <p>
+                A full-stack stock trading platform inspired by Zerodha with
+                authentication, dashboard, portfolio management and responsive
+                UI.
+              </p>
+
+              <div class="tech-stack">
+                <span>React</span>
+                <span>Node</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span>Redux</span>
+                <span>JWT</span>
+              </div>
+
+              <div class="project-buttons">
+                <a href="#" class="primary-btn"> Live Demo </a>
+
+                <a href="#" class="secondary-btn"> GitHub </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="featured-card">
+            <div class="project-image">
+              <img src="./assets/projects/thinkbot.png" />
+              <span class="project-status completed"> Featured </span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="featured-heading">ThinkBot</h3>
+
+              <p>
+                AI-powered conversational platform with a clean interface and
+                real-time responses.
+              </p>
+
+              <div class="tech-stack">
+                <span>React</span>
+                <span>Node</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span>AI API</span>
+              </div>
+
+              <div class="project-buttons">
+                <a href="#" class="primary-btn"> Demo </a>
+
+                <a href="#" class="secondary-btn"> GitHub </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="featured-card">
+            <div class="project-image">
+              <img src="./assets/projects/conferensync.png" />
+              <span class="project-status progress"> In Progress </span>
+            </div>
+            <div class="project-content">
+              <h3 class="featured-heading">ConferenSync</h3>
+              <p>
+                Video conferencing platform inspired by Zoom with
+                authentication, meetings and real-time communication.
+              </p>
+              <div class="tech-stack">
+                <span>React</span>
+                <span>Node</span>
+                <span>Socket.io</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="secondary-btn"> GitHub </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="other-projects">
+          <h2 class="sub-title">Other Projects</h2>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./assets/projects/project.png" />
+              </div>
+
+              <div class="project-content">
+                <h3>TaskFlow</h3>
+
+                <p>Short description goes here.</p>
+
+                <div class="tech-stack">
+                  <span>React</span>
+                  <span>Node</span>
+                </div>
+
+                <div class="project-buttons">
+                  <a href="https://github.com/gayatri-kulkarni24/Full-Stack-Todo-Application" target="_blank" class="secondary-btn"> GitHub </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./assets/projects/project.png" />
+              </div>
+
+              <div class="project-content">
+                <h3>WanderLust</h3>
+
+                <p>Short description goes here.</p>
+
+                <div class="tech-stack">
+                  <span>React</span>
+                  <span>Node</span>
+                </div>
+
+                <div class="project-buttons">
+                  <a href="https://github.com/gayatri-kulkarni24/WanderLust" target="_blank" class="secondary-btn"> GitHub </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./assets/projects/project.png" />
+              </div>
+
+              <div class="project-content">
+                <h3>Dhananjay Sweets</h3>
+
+                <p>Short description goes here.</p>
+
+                <div class="tech-stack">
+                  <span>React</span>
+                  <span>Node</span>
+                </div>
+
+                <div class="project-buttons">
+                  <a href="https://github.com/gayatri-kulkarni24/Sweets-Ordering-System" target="_blank" class="secondary-btn"> GitHub </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./assets/projects/project.png" />
+              </div>
+
+              <div class="project-content">
+                <h3>Hotel Hub</h3>
+
+                <p>Short description goes here.</p>
+
+                <div class="tech-stack">
+                  <span>React</span>
+                  <span>Node</span>
+                </div>
+
+                <div class="project-buttons">
+                  <a href="https://github.com/gayatri-kulkarni24/Client-Side-Hotel-Management-Website" target="_blank" class="secondary-btn"> GitHub </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./assets/projects/project.png" />
+              </div>
+
+              <div class="project-content">
+                <h3>Weatherly</h3>
+
+                <p>Short description goes here.</p>
+
+                <div class="tech-stack">
+                  <span>React</span>
+                  <span>Node</span>
+                </div>
+
+                <div class="project-buttons">
+                  <a href="https://github.com/gayatri-kulkarni24/Weatherly" target="_blank" class="secondary-btn"> GitHub </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="./assets/projects/project.png" />
+              </div>
+
+              <div class="project-content">
+                <h3>Spotify UI</h3>
+
+                <p>Short description goes here.</p>
+
+                <div class="tech-stack">
+                  <span>React</span>
+                  <span>Node</span>
+                </div>
+
+                <div class="project-buttons">
+                  <a href="https://github.com/gayatri-kulkarni24/spotify_clone" target="_blank" class="secondary-btn"> GitHub </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="coming-soon">
+          <h2 class="sub-title">Currently Building</h2>
+
+          <div class="coming-card">
+            <i class="fab fa-github"></i>
+
+            <h3>CodeHub</h3>
+
+            <p>GitHub Clone</p>
+
+            <span> Coming Soon </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="section-title">
+          <h2>Professional Experience</h2>
+          <p>Internships, Traineeships & Professional Journey</p>
+        </div>
+
+        <div class="experience-timeline">
+          <!-- Internship -->
+
+          <div class="experience-card">
+            <div class="experience-icon">💼</div>
+
+            <div class="experience-content">
+              <span class="experience-date"> Feb 2026 - Apr 2026 </span>
+
+              <h3>Web Development Intern</h3>
+
+              <h4>InternsElite</h4>
+
+              <p>
+                Worked on real-world web development projects, improved
+                frontend and backend development skills, collaborated on
+                practical assignments and successfully completed the
+                internship program.
+              </p>
+
+              <div class="experience-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Bootstrap</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Express</span>
+              </div>
+
+              <div class="experience-buttons">
+                <a href="assets/certificates/internship_letter_internselite.jpeg" target="_blank" class="primary-btn">
+                  Internship Letter
+                </a>
+
+                <a href="assets/certificates/Letter of Recommendation (LOR) - Gayatri Sunil Kulkarni_Full Stack Web Development_WD-FSWD-A4_FEB-8959_InternsElite.pdf"
+                  target="_blank" class="secondary-btn">
+                  Recommendation
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Traineeship -->
+
+          <div class="experience-card">
+            <div class="experience-icon">🎓</div>
+
+            <div class="experience-content">
+              <span class="experience-date"> 2026 </span>
+
+              <h3>Virtual Traineeship</h3>
+
+              <h4>InternsElite and Apna College</h4>
+
+              <p>
+                Successfully completed an industry-oriented traineeship
+                focused on modern software development practices, project
+                execution and professional workflow.
+              </p>
+
+              <div class="experience-buttons">
+                <a href="assets/certificates/Traineeship Letter - Gayatri Sunil Kulkarni.pdf" target="_blank"
+                  class="primary-btn">
+                  Traineeship Letter
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Completion -->
+
+          <div class="experience-card">
+            <div class="experience-icon">🚀</div>
+
+            <div class="experience-content">
+              <span class="experience-date"> 2026 </span>
+
+              <h3>Project Completion</h3>
+
+              <h4>Major and Minor Projects</h4>
+
+              <p>
+                Successfully completed the assigned project while following
+                professional software development practices and project
+                delivery standards.
+              </p>
+
+              <div class="experience-buttons">
+                <a href="assets/certificates/Letter of Project Completion - Gayatri Sunil Kulkarni_Full Stack Web Development_WD-FSWD-A4_FEB-8959_InternsElite.pdf"
+                  target="_blank" class="primary-btn">
+                  Project Letter
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="achievements" class="achievements">
+      <div class="container">
+        <div class="section-title">
+          <h2>Achievements & Certifications</h2>
+          <p>Recognitions, Certifications & Coding Milestones</p>
+        </div>
+
+        <div class="achievement-grid">
+          <!-- Internship -->
+
+          <div class="achievement-card">
+            <div class="achievement-icon">💼</div>
+            <h3>Internship</h3>
+            <h4>InternsElite</h4>
+            <p>Successfully completed Web Development Internship.</p>
+
+            <a href="assets/certificates/internship_letter_internselite.jpeg" target="_blank" class="primary-btn">
+              View Certificate
+            </a>
+          </div>
+
+          <!-- Recommendation -->
+
+          <div class="achievement-card">
+            <div class="achievement-icon">⭐</div>
+            <h3>Recommendation</h3>
+            <h4>InternsElite</h4>
+            <p>
+              Received a Letter of Recommendation for outstanding performance.
+            </p>
+
+            <a href="assets/certificates/Letter of Recommendation (LOR) - Gayatri Sunil Kulkarni_Full Stack Web Development_WD-FSWD-A4_FEB-8959_InternsElite.pdf"
+              target="_blank" class="primary-btn">
+              View Letter
+            </a>
+          </div>
+
+          <!-- Project Completion -->
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🚀</div>
+            <h3>Project Completion</h3>
+            <h4>InternsElite</h4>
+            <p>Successfully completed the assigned industry project.</p>
+
+            <a href="assets/certificates/Letter of Project Completion - Gayatri Sunil Kulkarni_Full Stack Web Development_WD-FSWD-A4_FEB-8959_InternsElite.pdf"
+              target="_blank" class="primary-btn">
+              View Letter
+            </a>
+          </div>
+
+          <!-- Traineeship -->
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🎓</div>
+            <h3>Traineeship</h3>
+            <h4>InternsElite</h4>
+            <p>Completed professional virtual traineeship successfully.</p>
+
+            <a href="assets/certificates/Traineeship Letter - Gayatri Sunil Kulkarni.pdf" target="_blank"
+              class="primary-btn">
+              View Letter
+            </a>
+          </div>
+
+          <!-- Alpha -->
+
+          <div class="achievement-card">
+            <div class="achievement-icon">📘</div>
+            <h3>Alpha DSA</h3>
+            <h4>Apna College</h4>
+            <p>
+              Completed comprehensive Data Structures & Algorithms course.
+            </p>
+            <a href="assets/certificates/alpha-certificate-apna-college.pdf" target="_blank" class="primary-btn">
+              View Certificate
+            </a>
+          </div>
+
+          <!-- Delta -->
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🌐</div>
+            <h3>Delta Web Development</h3>
+            <h4>Apna College</h4>
+            <p>Completed Full Stack Web Development course.</p>
+            <a href="assets/certificates/delta-certificate-apna-college.pdf" target="_blank" class="primary-btn">
+              View Certificate
+            </a>
+          </div>
+
+          <!-- January -->
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🏅</div>
+            <h3>January Badge</h3>
+            <h4>LeetCode</h4>
+            <p>Monthly Coding Challenge Badge.</p>
+            <a href="assets/certificates/leetCode_january_consistency_badge.png" target="_blank" class="primary-btn">
+              View Badge
+            </a>
+          </div>
+
+          <!-- February -->
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🏅</div>
+            <h3>February Badge</h3>
+            <h4>LeetCode</h4>
+            <p>Monthly Coding Challenge Badge.</p>
+            <a href="assets/certificates/leetCode_february_consistency_badge.png" target="_blank" class="primary-btn">
+              View Badge
+            </a>
+          </div>
+
+          <!-- March -->
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🏅</div>
+            <h3>March Badge</h3>
+            <h4>LeetCode</h4>
+            <p>Monthly Coding Challenge Badge.</p>
+            <a href="assets/certificates/leetCode_march_consistency_badge.png" target="_blank" class="primary-btn">
+              View Badge
+            </a>
+          </div>
+
+          <!-- April -->
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🏅</div>
+            <h3>April Badge</h3>
+            <h4>LeetCode</h4>
+            <p>Monthly Coding Challenge Badge.</p>
+            <a href="assets/certificates/leetCode_april_consistency_badge.png" target="_blank" class="primary-btn">
+              View Badge
+            </a>
+          </div>
+
+          <!-- 50 -->
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🔥</div>
+            <h3>50 Days Badge</h3>
+            <h4>LeetCode</h4>
+            <p>Successfully achieved a 50-day coding streak.</p>
+            <a href="assets/certificates/50_days_badge.png" target="_blank" class="primary-btn">
+              View Badge
+            </a>
+          </div>
+
+          <!-- 100 -->
+
+          <div class="achievement-card">
+            <div class="achievement-icon">🚀</div>
+            <h3>100 Days Badge</h3>
+            <h4>LeetCode</h4>
+            <p>Successfully achieved a 100-day coding streak.</p>
+            <a href="assets/certificates/100_days_LeetCode_badge.png" target="_blank" class="primary-btn">
+              View Badge
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="dashboard" class="dashboard">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>Developer Dashboard</h2>
+
+          <p>
+            My coding journey through open-source contributions,
+            projects, and problem-solving.
+          </p>
+
+        </div>
+
+        <div class="dashboard-grid">
+          <!-- LeetCode -->
+
+          <div class="dashboard-card leetcode-card">
+
+            <div class="dashboard-header">
+
+              <i class="fas fa-code"></i>
+
+              <h3>LeetCode</h3>
+
+            </div>
+
+            <div class="leetcode-profile">
+
+              <div class="leetcode-avatar">
+
+                <i class="fas fa-laptop-code"></i>
+
+              </div>
+
+              <h4>Gayatri Kulkarni</h4>
+
+              <p>Consistent Problem Solver</p>
+
+            </div>
+
+            <div class="leetcode-stats">
+
+              <div class="stat">
+
+                <h3>100+</h3>
+
+                <span>Days Streak</span>
+
+              </div>
+
+              <div class="stat">
+
+                <h3>200+</h3>
+
+                <span>Problems</span>
+
+              </div>
+
+              <div class="stat">
+
+                <h3>6</h3>
+
+                <span>Badges</span>
+
+              </div>
+
+            </div>
+
+            <div class="badges">
+
+              <span>🏅 Jan</span>
+
+              <span>🏅 Feb</span>
+
+              <span>🏅 Mar</span>
+
+              <span>🏅 Apr</span>
+
+              <span>🔥 50 Days</span>
+
+              <span>🚀 100 Days</span>
+
+            </div>
+
+            <a href="https://leetcode.com/u/gayatri_2411/" target="_blank" class="dashboard-btn">
+
+              Visit LeetCode
+
+            </a>
+
+          </div>
+
+          <!-- GitHub -->
+
+          <div class="dashboard-card github-card">
+
+            <div class="dashboard-header">
+
+              <i class="fab fa-github"></i>
+
+              <h3>GitHub</h3>
+
+            </div>
+
+            <!-- GitHub contribution graph -->
+            <img src="https://ghchart.rshah.org/gayatri-kulkarni24">
+
+            <!-- Streak -->
+
+            <img src="https://streak-stats.demolab.com?user=gayatri-kulkarni24&theme=tokyonight&hide_border=true"
+              alt="GitHub Streak">
+
+            <a href="https://github.com/gayatri-kulkarni24" target="_blank" class="dashboard-btn">
+
+              Visit GitHub
+
+            </a>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Get In Touch</h2>
+
+          <p>
+            Have a project, internship opportunity, or just want to say hello?
+            I'd love to hear from you.
+          </p>
+        </div>
+
+        <!-- Contact Cards -->
+
+        <div class="contact-grid">
+          <a href="mailto:gaytrikulkarni616@gmail.com" class="contact-box email">
+            <div class="icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+
+            <h3>Email</h3>
+
+            <span>Send Mail</span>
+          </a>
+
+          <a href="tel:+919579093642" class="contact-box phone">
+            <div class="icon">
+              <i class="fas fa-phone"></i>
+            </div>
+
+            <h3>Phone</h3>
+
+            <span>Call Me</span>
+          </a>
+
+          <div class="contact-box location">
+            <div class="icon">
+              <i class="fas fa-location-dot"></i>
+            </div>
+
+            <h3>Vaijapur,Chha.Sambhajinagar</h3>
+
+            <span>Maharashtra, India</span>
+          </div>
+
+          <a href="#" class="contact-box github">
+            <div class="icon">
+              <i class="fab fa-github"></i>
+            </div>
+
+            <h3>GitHub</h3>
+
+            <span>View Code</span>
+          </a>
+
+          <a href="#" class="contact-box linkedin">
+            <div class="icon">
+              <i class="fab fa-linkedin"></i>
+            </div>
+
+            <h3>LinkedIn</h3>
+
+            <span>Connect</span>
+          </a>
+
+          <a href="assets/resume.pdf" download class="contact-box resume">
+            <div class="icon">
+              <i class="fas fa-file-download"></i>
+            </div>
+
+            <h3>Resume</h3>
+
+            <span>Download</span>
+          </a>
+        </div>
+
+        <!-- FORM -->
+        <div class="contact-form-wrapper">
+
+          <div class="form-glow glow1"></div>
+          <div class="form-glow glow2"></div>
+
+          <form class="contact-form">
+
+            <h2>Send Me A Message</h2>
+            <div class="input-row"></div>
+
+            <div class="input-box">
+              <input type="text" id="name" required />
+              <label for="name">Your Name</label>
+              <i class="fas fa-user"></i>
+            </div>
+
+            <div class="input-box">
+              <input type="email" id="email" required />
+              <label for="email">Email Address</label>
+              <i class="fas fa-envelope"></i>
+            </div>
+
+
+            <div class="input-box">
+              <textarea id="message" maxlength="500" required></textarea>
+              <label for="message">Tell me about it</label>
+              <i class="fas fa-message"></i>
+              <span class="char-count">
+                <span id="charCount">0</span>/500
+              </span>
+            </div>
+
+            <button type="submit">
+              <span>Send Message</span>
+              <i class="fas fa-arrow-up-right-from-square"></i>
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- GSAP -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
+  <!-- Three JS -->
+
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <!-- Lucide -->
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+  <!-- JS -->
+  <script src="./js/main.js"></script>
+  <script src="./js/hero.js"></script>
+  <script src="./js/loader.js"></script>
+  <script src="./js/animation.js"></script>
+  <script src="./js/threeScene.js"></script>
+  <script src="./js/stats.js"></script>
+  <script src="./js/cursor.js"></script>
+</body>
+
+</html>

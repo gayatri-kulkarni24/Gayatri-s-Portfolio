@@ -19,6 +19,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(
     Math.min(window.devicePixelRatio, 1.5)
 );
+
 // renderer.setPixelRatio(window.devicePixelRatio);
 camera.position.z = 8;
 

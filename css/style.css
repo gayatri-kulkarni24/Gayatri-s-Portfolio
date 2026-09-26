@@ -2088,6 +2088,7 @@ body.loading {
     .form-header h2 {
         font-size: 1.6rem;
     }
+<<<<<<< HEAD
 }
 .primary-btn,
 .resume-btn,
@@ -2138,4 +2139,6 @@ body.loading {
         );
     transform-origin: left;
     pointer-events: none;
+=======
+>>>>>>> dd33c5305d14bca74d1f09ed1b075dc2dafd6a0e
 }
